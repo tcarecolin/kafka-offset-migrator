@@ -38,6 +38,8 @@ docker-compose up -d
 
 ```
 
+![Screenshot](ressources/Screenshot_20191105_185337.png)
+
 now you should see 4 new application running :
 2 kafka instances
 2 zookeeper instances
