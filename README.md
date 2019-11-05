@@ -121,6 +121,7 @@ Reset all consumer group offsets to zero
 
 ```
 bash reset-offsets.sh <BROKER_IP:PORT> <TOPIC> <CONSUMER_GROUP>
+```
 
 reconfigure kafka topics manualy (after editing parameters)
 
