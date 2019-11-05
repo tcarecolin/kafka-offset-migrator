@@ -76,7 +76,7 @@ then start the mirror
 
 ```
 docker exec -it <KAFKA 2 NAME> bash
-bash /root/config/start-mirror.sh
+bash /root/config/start-mirror.sh <TOPIC>
 
 ```
 Now you are able to stop consumer 1
