@@ -33,7 +33,12 @@ copy_offset(){
 }
 
 stop_consumers() {
-  consumers=$(./kafka-consumer-groups.sh --bootstrap-server kafka2:9092 --group consumer_group_2 --describe --members | awk {' print $2 '})
+  consumers=$(./kafka-consumer-groups.sh \
+  --bootstrap-server $BROKER_B \
+  --group $CGROUP_B \
+  --describe \
+  --members | \
+  awk {' print $2 '});
   consumers=${consumers/"CONSUMER-ID"/""}
   echo "consumers to kill : \n"$consumers;
   nbligne=$(echo $consumers | wc -l)
