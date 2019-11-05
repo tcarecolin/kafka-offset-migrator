@@ -2,6 +2,9 @@
 a suite of tools to test and migrate kafka consumer groups offsets
 
 this project has been built on top of the original Apache Kafka project : https://kafka.apache.org/downloads
+based on an original production need :
+- migrate all kafka based jobs without messing or losing data
+- assuming the lowest service interruption
 
 ## Setup the project
 download latest kafka binaries
