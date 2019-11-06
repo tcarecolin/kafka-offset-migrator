@@ -95,6 +95,9 @@ bash migrate-offset.sh \
   <TOPIC TO MIGRATE>
 
 ```
+example on a 30 partitions topic:
+![Screenshot](ressources/Screenshot_20191106_133945.png)
+
 
 Note: if any existing consumer are remaining in  <KAFKA_2_CONSUMER_GROUP>
 they will be shot down before the migration opperations
